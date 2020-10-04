@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="form">
+    <form  method="POST" class= 'profile' enctype="multipart/form-data">
+      <h1 class='heading'>Delivery Person Registration Form</h1>
+      <br>
+      {% csrf_token %}
+      {% for field in MyProfileForm %}
+          <p>
+            {{ field }}
+
+            {% if field.help_text %}
+              <small style="color: grey">{{ field.help_text }}</small>
+            {% endif %}
+            {% for error in field.errors %}
+              <p style="color: red">{{ error }}</p>
+            {% endfor %}
+          </p>
+          <br>
+      {% endfor %}
+      <input type="submit" class="button button-block" value="Submit">
+   </form>
+  </div>
+</div>
+{% endblock %}

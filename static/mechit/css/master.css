@@ -1,0 +1,205 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+ .heading{
+   text-align: center;
+ }
+
+ .form {
+   background:#495057;
+   padding: 40px;
+   max-width:600px;
+   margin:40px auto;
+   border-radius:$br;
+   box-shadow:0 4px 10px 4px #13232f;
+ }
+
+.tab-group{
+  text-align: center;
+  text-decoration-color: black;
+  background-color: cadetblue;
+   height:55px;
+}
+#tab-signup{
+  background-color:cadetblue;
+  float:left;
+  width:50%;
+  height:55px;
+  padding: 10px;
+  cursor:pointer;
+}
+#tab-signup:hover{
+  background-color:#1793a7
+}
+#tab-login:hover{
+  background-color:#1793a7
+}
+#tab-login{
+  background-color:cadetblue;
+  float:left;
+  width:50%;
+  height:55px;
+  padding:10px;
+  cursor:pointer;
+}
+
+#tab-signup a{
+  list-style:none;
+  color:#dee2e6;
+  font-weight: bold;
+}
+#tab-login a{
+  list-style:none;
+  color:#dee2e6;
+  font-weight: bold;
+}
+
+#username{
+  font-weight: bold;
+}
+
+#password{
+  font-weight: bold;
+}
+
+form label{
+  font-weight:bold;
+}
+
+label{
+  font-weight:bold;
+}
+
+.site-header {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: black;
+  transition: ease-in-out color .15s;
+  font-weight: bold;
+}
+.site-header a:hover {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+div.mx-au {
+  float:left;
+  height: 400px;
+  width: 50%;
+  margin-left: ($spacer * .25) !important;
+
+}
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.mechitback_ground{
+  background-image: url("static/mechit/images/8309.jpg");
+}
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background-color:cadetblue;
+  color:black;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover{
+  background:#1793a7;
+}
+
+.uploadbutton {
+  color:black;
+  border-radius:2;
+  border: 2px ;
+}
+
+
+.requestdetail{
+   text-align: left;
+   margin-left: 40%;
+
+}
+
+.home {
+https://source.unsplash.com/twukN12EN7c/1920x1080
+    height: 130vh;
+    background-image: url('/static/mechit/images/8309.jpg');
+    background-position: center;
+	  background-size:1000px;
+    background-repeat: no-repeat;
+}
+
+body {
+  background: url('') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
